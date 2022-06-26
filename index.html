@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Personas</title>
+
+    <link rel="preload" href="./assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&family=Staatliches&display=swap" rel="stylesheet" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" href="./assets/img/fondo.png" as="image">
+
+</head>
+<body onload="mostrarPersonas()">
+    <main class="main">
+        <div class="contenedor">
+            <div class="titulo contenido">
+                <h1 class="titulo__texto">Listado de Personas</h1>
+            </div>
+            <div class="listado contenido">
+                <div class="elemento">
+                    <ul id="personas">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="agregar contenido">
+                <div class="agregar__btn">
+                    <input class="btn" id="btn" type="submit" value="+">
+                </div>
+                <form class="formulario" id="formulario" action="">
+                    <input class="input" type="text" placeholder="Nombre" id="nombre">
+                    <input class="input" type="text" placeholder="Apellido" id="apellido">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/persona.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

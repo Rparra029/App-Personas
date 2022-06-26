@@ -1,0 +1,92 @@
+:root{
+    /*Fuentes*/
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+
+    /*Colores*/
+    --primario: #33FFC7;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #e1e1e1;
+    --fondo: #59C0FF;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-image: url(../img/fondo.png);
+    background-color: var(--fondo);
+}
+h1{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+}
+.contenedor{
+    text-align: center;
+    width: 50%;
+    margin: 15rem auto;
+}
+.contenido{
+    margin-bottom: 4rem;
+}
+.contenido:last-of-type{
+    margin-bottom: none;
+}
+.titulo{
+    background-color: var(--primario);
+    width: 100%;
+    border-radius: 1rem;
+
+}
+.elemento{
+    background-color: var(--blanco);
+    width: 100%;
+    border-radius: 1rem;
+    text-align: left;
+    min-height: 10rem;
+
+}
+.agregar{
+    background-color: var(--blanco);
+    border-radius: .5rem;
+}
+.agregar__btn{
+    text-align: center;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+.btn{
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 5rem;
+    color: var(--blanco);
+    background-color: var(--primario);
+
+}
+.formulario{
+    display: flex;
+}
+.input{
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border : none;
+    border-radius: .5rem;
+    background: var(--blanco);
+    font-weight: 200;
+    width: 49%;
+    margin: 0;
+}
+.input:focus{
+    outline: none;
+}
